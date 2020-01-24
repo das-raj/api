@@ -5,4 +5,5 @@ from datetime import date
 
 def todays_date(request):
     current_date = date.today()
-    return HttpResponse("Today's date is "+str(current_date))
+    server_name = 'Server1'
+    return HttpResponse("Today's date is "+str(current_date)+" ("+server_name+")")
